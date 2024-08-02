@@ -2088,4 +2088,1766 @@
       },
     },
   },
+  data: {
+    actions_environment_secrets(name): {
+      local data = self,
+      environment:: error 'environment is required',
+      full_name:: null,
+      id:: null,
+      name:: null,
+      secrets:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_actions_environment_secrets: {
+            [name]: {
+              environment: data.environment,
+              full_name: data.full_name,
+              id: data.id,
+              name: data.name,
+              secrets: data.secrets,
+            }
+          }
+        }
+      },
+    },
+    actions_environment_variables(name): {
+      local data = self,
+      environment:: error 'environment is required',
+      full_name:: null,
+      id:: null,
+      name:: null,
+      variables:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_actions_environment_variables: {
+            [name]: {
+              environment: data.environment,
+              full_name: data.full_name,
+              id: data.id,
+              name: data.name,
+              variables: data.variables,
+            }
+          }
+        }
+      },
+    },
+    actions_organization_oidc_subject_claim_customization_template(name): {
+      local data = self,
+      id:: null,
+      include_claim_keys:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_actions_organization_oidc_subject_claim_customization_template: {
+            [name]: {
+              id: data.id,
+              include_claim_keys: data.include_claim_keys,
+            }
+          }
+        }
+      },
+    },
+    actions_organization_public_key(name): {
+      local data = self,
+      id:: null,
+      key:: null,
+      key_id:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_actions_organization_public_key: {
+            [name]: {
+              id: data.id,
+              key: data.key,
+              key_id: data.key_id,
+            }
+          }
+        }
+      },
+    },
+    actions_organization_registration_token(name): {
+      local data = self,
+      expires_at:: null,
+      id:: null,
+      token:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_actions_organization_registration_token: {
+            [name]: {
+              expires_at: data.expires_at,
+              id: data.id,
+              token: data.token,
+            }
+          }
+        }
+      },
+    },
+    actions_organization_secrets(name): {
+      local data = self,
+      id:: null,
+      secrets:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_actions_organization_secrets: {
+            [name]: {
+              id: data.id,
+              secrets: data.secrets,
+            }
+          }
+        }
+      },
+    },
+    actions_organization_variables(name): {
+      local data = self,
+      id:: null,
+      variables:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_actions_organization_variables: {
+            [name]: {
+              id: data.id,
+              variables: data.variables,
+            }
+          }
+        }
+      },
+    },
+    actions_public_key(name): {
+      local data = self,
+      id:: null,
+      key:: null,
+      key_id:: null,
+      repository:: error 'repository is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_actions_public_key: {
+            [name]: {
+              id: data.id,
+              key: data.key,
+              key_id: data.key_id,
+              repository: data.repository,
+            }
+          }
+        }
+      },
+    },
+    actions_registration_token(name): {
+      local data = self,
+      expires_at:: null,
+      id:: null,
+      repository:: error 'repository is required',
+      token:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_actions_registration_token: {
+            [name]: {
+              expires_at: data.expires_at,
+              id: data.id,
+              repository: data.repository,
+              token: data.token,
+            }
+          }
+        }
+      },
+    },
+    actions_repository_oidc_subject_claim_customization_template(name): {
+      local data = self,
+      id:: null,
+      include_claim_keys:: null,
+      name:: error 'name is required',
+      use_default:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_actions_repository_oidc_subject_claim_customization_template: {
+            [name]: {
+              id: data.id,
+              include_claim_keys: data.include_claim_keys,
+              name: data.name,
+              use_default: data.use_default,
+            }
+          }
+        }
+      },
+    },
+    actions_secrets(name): {
+      local data = self,
+      full_name:: null,
+      id:: null,
+      name:: null,
+      secrets:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_actions_secrets: {
+            [name]: {
+              full_name: data.full_name,
+              id: data.id,
+              name: data.name,
+              secrets: data.secrets,
+            }
+          }
+        }
+      },
+    },
+    actions_variables(name): {
+      local data = self,
+      full_name:: null,
+      id:: null,
+      name:: null,
+      variables:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_actions_variables: {
+            [name]: {
+              full_name: data.full_name,
+              id: data.id,
+              name: data.name,
+              variables: data.variables,
+            }
+          }
+        }
+      },
+    },
+    app(name): {
+      local data = self,
+      description:: null,
+      id:: null,
+      name:: null,
+      node_id:: null,
+      slug:: error 'slug is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_app: {
+            [name]: {
+              description: data.description,
+              id: data.id,
+              name: data.name,
+              node_id: data.node_id,
+              slug: data.slug,
+            }
+          }
+        }
+      },
+    },
+    app_token(name): {
+      local data = self,
+      app_id:: error 'app_id is required',
+      id:: null,
+      installation_id:: error 'installation_id is required',
+      pem_file:: error 'pem_file is required',
+      token:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_app_token: {
+            [name]: {
+              app_id: data.app_id,
+              id: data.id,
+              installation_id: data.installation_id,
+              pem_file: data.pem_file,
+              token: data.token,
+            }
+          }
+        }
+      },
+    },
+    branch(name): {
+      local data = self,
+      branch:: error 'branch is required',
+      etag:: null,
+      id:: null,
+      ref:: null,
+      repository:: error 'repository is required',
+      sha:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_branch: {
+            [name]: {
+              branch: data.branch,
+              etag: data.etag,
+              id: data.id,
+              ref: data.ref,
+              repository: data.repository,
+              sha: data.sha,
+            }
+          }
+        }
+      },
+    },
+    branch_protection_rules(name): {
+      local data = self,
+      id:: null,
+      repository:: error 'repository is required',
+      rules:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_branch_protection_rules: {
+            [name]: {
+              id: data.id,
+              repository: data.repository,
+              rules: data.rules,
+            }
+          }
+        }
+      },
+    },
+    codespaces_organization_public_key(name): {
+      local data = self,
+      id:: null,
+      key:: null,
+      key_id:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_codespaces_organization_public_key: {
+            [name]: {
+              id: data.id,
+              key: data.key,
+              key_id: data.key_id,
+            }
+          }
+        }
+      },
+    },
+    codespaces_organization_secrets(name): {
+      local data = self,
+      id:: null,
+      secrets:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_codespaces_organization_secrets: {
+            [name]: {
+              id: data.id,
+              secrets: data.secrets,
+            }
+          }
+        }
+      },
+    },
+    codespaces_public_key(name): {
+      local data = self,
+      id:: null,
+      key:: null,
+      key_id:: null,
+      repository:: error 'repository is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_codespaces_public_key: {
+            [name]: {
+              id: data.id,
+              key: data.key,
+              key_id: data.key_id,
+              repository: data.repository,
+            }
+          }
+        }
+      },
+    },
+    codespaces_secrets(name): {
+      local data = self,
+      full_name:: null,
+      id:: null,
+      name:: null,
+      secrets:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_codespaces_secrets: {
+            [name]: {
+              full_name: data.full_name,
+              id: data.id,
+              name: data.name,
+              secrets: data.secrets,
+            }
+          }
+        }
+      },
+    },
+    codespaces_user_public_key(name): {
+      local data = self,
+      id:: null,
+      key:: null,
+      key_id:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_codespaces_user_public_key: {
+            [name]: {
+              id: data.id,
+              key: data.key,
+              key_id: data.key_id,
+            }
+          }
+        }
+      },
+    },
+    codespaces_user_secrets(name): {
+      local data = self,
+      id:: null,
+      secrets:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_codespaces_user_secrets: {
+            [name]: {
+              id: data.id,
+              secrets: data.secrets,
+            }
+          }
+        }
+      },
+    },
+    collaborators(name): {
+      local data = self,
+      affiliation:: null,
+      collaborator:: null,
+      id:: null,
+      owner:: error 'owner is required',
+      repository:: error 'repository is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_collaborators: {
+            [name]: {
+              affiliation: data.affiliation,
+              collaborator: data.collaborator,
+              id: data.id,
+              owner: data.owner,
+              repository: data.repository,
+            }
+          }
+        }
+      },
+    },
+    dependabot_organization_public_key(name): {
+      local data = self,
+      id:: null,
+      key:: null,
+      key_id:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_dependabot_organization_public_key: {
+            [name]: {
+              id: data.id,
+              key: data.key,
+              key_id: data.key_id,
+            }
+          }
+        }
+      },
+    },
+    dependabot_organization_secrets(name): {
+      local data = self,
+      id:: null,
+      secrets:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_dependabot_organization_secrets: {
+            [name]: {
+              id: data.id,
+              secrets: data.secrets,
+            }
+          }
+        }
+      },
+    },
+    dependabot_public_key(name): {
+      local data = self,
+      id:: null,
+      key:: null,
+      key_id:: null,
+      repository:: error 'repository is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_dependabot_public_key: {
+            [name]: {
+              id: data.id,
+              key: data.key,
+              key_id: data.key_id,
+              repository: data.repository,
+            }
+          }
+        }
+      },
+    },
+    dependabot_secrets(name): {
+      local data = self,
+      full_name:: null,
+      id:: null,
+      name:: null,
+      secrets:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_dependabot_secrets: {
+            [name]: {
+              full_name: data.full_name,
+              id: data.id,
+              name: data.name,
+              secrets: data.secrets,
+            }
+          }
+        }
+      },
+    },
+    enterprise(name): {
+      local data = self,
+      created_at:: null,
+      database_id:: null,
+      description:: null,
+      id:: null,
+      name:: null,
+      slug:: error 'slug is required',
+      url:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_enterprise: {
+            [name]: {
+              created_at: data.created_at,
+              database_id: data.database_id,
+              description: data.description,
+              id: data.id,
+              name: data.name,
+              slug: data.slug,
+              url: data.url,
+            }
+          }
+        }
+      },
+    },
+    external_groups(name): {
+      local data = self,
+      external_groups:: null,
+      id:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_external_groups: {
+            [name]: {
+              external_groups: data.external_groups,
+              id: data.id,
+            }
+          }
+        }
+      },
+    },
+    ip_ranges(name): {
+      local data = self,
+      actions:: null,
+      actions_ipv4:: null,
+      actions_ipv6:: null,
+      api:: null,
+      api_ipv4:: null,
+      api_ipv6:: null,
+      dependabot:: null,
+      dependabot_ipv4:: null,
+      dependabot_ipv6:: null,
+      git:: null,
+      git_ipv4:: null,
+      git_ipv6:: null,
+      hooks:: null,
+      hooks_ipv4:: null,
+      hooks_ipv6:: null,
+      id:: null,
+      importer:: null,
+      importer_ipv4:: null,
+      importer_ipv6:: null,
+      packages:: null,
+      packages_ipv4:: null,
+      packages_ipv6:: null,
+      pages:: null,
+      pages_ipv4:: null,
+      pages_ipv6:: null,
+      web:: null,
+      web_ipv4:: null,
+      web_ipv6:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_ip_ranges: {
+            [name]: {
+              actions: data.actions,
+              actions_ipv4: data.actions_ipv4,
+              actions_ipv6: data.actions_ipv6,
+              api: data.api,
+              api_ipv4: data.api_ipv4,
+              api_ipv6: data.api_ipv6,
+              dependabot: data.dependabot,
+              dependabot_ipv4: data.dependabot_ipv4,
+              dependabot_ipv6: data.dependabot_ipv6,
+              git: data.git,
+              git_ipv4: data.git_ipv4,
+              git_ipv6: data.git_ipv6,
+              hooks: data.hooks,
+              hooks_ipv4: data.hooks_ipv4,
+              hooks_ipv6: data.hooks_ipv6,
+              id: data.id,
+              importer: data.importer,
+              importer_ipv4: data.importer_ipv4,
+              importer_ipv6: data.importer_ipv6,
+              packages: data.packages,
+              packages_ipv4: data.packages_ipv4,
+              packages_ipv6: data.packages_ipv6,
+              pages: data.pages,
+              pages_ipv4: data.pages_ipv4,
+              pages_ipv6: data.pages_ipv6,
+              web: data.web,
+              web_ipv4: data.web_ipv4,
+              web_ipv6: data.web_ipv6,
+            }
+          }
+        }
+      },
+    },
+    issue_labels(name): {
+      local data = self,
+      id:: null,
+      labels:: null,
+      repository:: error 'repository is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_issue_labels: {
+            [name]: {
+              id: data.id,
+              labels: data.labels,
+              repository: data.repository,
+            }
+          }
+        }
+      },
+    },
+    membership(name): {
+      local data = self,
+      etag:: null,
+      id:: null,
+      organization:: null,
+      role:: null,
+      state:: null,
+      username:: error 'username is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_membership: {
+            [name]: {
+              etag: data.etag,
+              id: data.id,
+              organization: data.organization,
+              role: data.role,
+              state: data.state,
+              username: data.username,
+            }
+          }
+        }
+      },
+    },
+    organization(name): {
+      local data = self,
+      advanced_security_enabled_for_new_repositories:: null,
+      default_repository_permission:: null,
+      dependabot_alerts_enabled_for_new_repositories:: null,
+      dependabot_security_updates_enabled_for_new_repositories:: null,
+      dependency_graph_enabled_for_new_repositories:: null,
+      description:: null,
+      id:: null,
+      ignore_archived_repos:: null,
+      login:: null,
+      members:: null,
+      members_allowed_repository_creation_type:: null,
+      members_can_create_internal_repositories:: null,
+      members_can_create_pages:: null,
+      members_can_create_private_pages:: null,
+      members_can_create_private_repositories:: null,
+      members_can_create_public_pages:: null,
+      members_can_create_public_repositories:: null,
+      members_can_create_repositories:: null,
+      members_can_fork_private_repositories:: null,
+      name:: error 'name is required',
+      node_id:: null,
+      orgname:: null,
+      plan:: null,
+      repositories:: null,
+      secret_scanning_enabled_for_new_repositories:: null,
+      secret_scanning_push_protection_enabled_for_new_repositories:: null,
+      two_factor_requirement_enabled:: null,
+      users:: null,
+      web_commit_signoff_required:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_organization: {
+            [name]: {
+              advanced_security_enabled_for_new_repositories: data.advanced_security_enabled_for_new_repositories,
+              default_repository_permission: data.default_repository_permission,
+              dependabot_alerts_enabled_for_new_repositories: data.dependabot_alerts_enabled_for_new_repositories,
+              dependabot_security_updates_enabled_for_new_repositories: data.dependabot_security_updates_enabled_for_new_repositories,
+              dependency_graph_enabled_for_new_repositories: data.dependency_graph_enabled_for_new_repositories,
+              description: data.description,
+              id: data.id,
+              ignore_archived_repos: data.ignore_archived_repos,
+              login: data.login,
+              members: data.members,
+              members_allowed_repository_creation_type: data.members_allowed_repository_creation_type,
+              members_can_create_internal_repositories: data.members_can_create_internal_repositories,
+              members_can_create_pages: data.members_can_create_pages,
+              members_can_create_private_pages: data.members_can_create_private_pages,
+              members_can_create_private_repositories: data.members_can_create_private_repositories,
+              members_can_create_public_pages: data.members_can_create_public_pages,
+              members_can_create_public_repositories: data.members_can_create_public_repositories,
+              members_can_create_repositories: data.members_can_create_repositories,
+              members_can_fork_private_repositories: data.members_can_fork_private_repositories,
+              name: data.name,
+              node_id: data.node_id,
+              orgname: data.orgname,
+              plan: data.plan,
+              repositories: data.repositories,
+              secret_scanning_enabled_for_new_repositories: data.secret_scanning_enabled_for_new_repositories,
+              secret_scanning_push_protection_enabled_for_new_repositories: data.secret_scanning_push_protection_enabled_for_new_repositories,
+              two_factor_requirement_enabled: data.two_factor_requirement_enabled,
+              users: data.users,
+              web_commit_signoff_required: data.web_commit_signoff_required,
+            }
+          }
+        }
+      },
+    },
+    organization_custom_role(name): {
+      local data = self,
+      base_role:: null,
+      description:: null,
+      id:: null,
+      name:: error 'name is required',
+      permissions:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_organization_custom_role: {
+            [name]: {
+              base_role: data.base_role,
+              description: data.description,
+              id: data.id,
+              name: data.name,
+              permissions: data.permissions,
+            }
+          }
+        }
+      },
+    },
+    organization_external_identities(name): {
+      local data = self,
+      id:: null,
+      identities:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_organization_external_identities: {
+            [name]: {
+              id: data.id,
+              identities: data.identities,
+            }
+          }
+        }
+      },
+    },
+    organization_ip_allow_list(name): {
+      local data = self,
+      id:: null,
+      ip_allow_list:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_organization_ip_allow_list: {
+            [name]: {
+              id: data.id,
+              ip_allow_list: data.ip_allow_list,
+            }
+          }
+        }
+      },
+    },
+    organization_team_sync_groups(name): {
+      local data = self,
+      groups:: null,
+      id:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_organization_team_sync_groups: {
+            [name]: {
+              groups: data.groups,
+              id: data.id,
+            }
+          }
+        }
+      },
+    },
+    organization_teams(name): {
+      local data = self,
+      id:: null,
+      results_per_page:: null,
+      root_teams_only:: null,
+      summary_only:: null,
+      teams:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_organization_teams: {
+            [name]: {
+              id: data.id,
+              results_per_page: data.results_per_page,
+              root_teams_only: data.root_teams_only,
+              summary_only: data.summary_only,
+              teams: data.teams,
+            }
+          }
+        }
+      },
+    },
+    organization_webhooks(name): {
+      local data = self,
+      id:: null,
+      webhooks:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_organization_webhooks: {
+            [name]: {
+              id: data.id,
+              webhooks: data.webhooks,
+            }
+          }
+        }
+      },
+    },
+    ref(name): {
+      local data = self,
+      etag:: null,
+      id:: null,
+      owner:: null,
+      ref:: error 'ref is required',
+      repository:: error 'repository is required',
+      sha:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_ref: {
+            [name]: {
+              etag: data.etag,
+              id: data.id,
+              owner: data.owner,
+              ref: data.ref,
+              repository: data.repository,
+              sha: data.sha,
+            }
+          }
+        }
+      },
+    },
+    release(name): {
+      local data = self,
+      asserts_url:: null,
+      assets:: null,
+      assets_url:: null,
+      body:: null,
+      created_at:: null,
+      draft:: null,
+      html_url:: null,
+      id:: null,
+      name:: null,
+      owner:: error 'owner is required',
+      prerelease:: null,
+      published_at:: null,
+      release_id:: null,
+      release_tag:: null,
+      repository:: error 'repository is required',
+      retrieve_by:: error 'retrieve_by is required',
+      tarball_url:: null,
+      target_commitish:: null,
+      upload_url:: null,
+      url:: null,
+      zipball_url:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_release: {
+            [name]: {
+              asserts_url: data.asserts_url,
+              assets: data.assets,
+              assets_url: data.assets_url,
+              body: data.body,
+              created_at: data.created_at,
+              draft: data.draft,
+              html_url: data.html_url,
+              id: data.id,
+              name: data.name,
+              owner: data.owner,
+              prerelease: data.prerelease,
+              published_at: data.published_at,
+              release_id: data.release_id,
+              release_tag: data.release_tag,
+              repository: data.repository,
+              retrieve_by: data.retrieve_by,
+              tarball_url: data.tarball_url,
+              target_commitish: data.target_commitish,
+              upload_url: data.upload_url,
+              url: data.url,
+              zipball_url: data.zipball_url,
+            }
+          }
+        }
+      },
+    },
+    repositories(name): {
+      local data = self,
+      full_names:: null,
+      id:: null,
+      include_repo_id:: null,
+      names:: null,
+      query:: error 'query is required',
+      repo_ids:: null,
+      results_per_page:: null,
+      sort:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_repositories: {
+            [name]: {
+              full_names: data.full_names,
+              id: data.id,
+              include_repo_id: data.include_repo_id,
+              names: data.names,
+              query: data.query,
+              repo_ids: data.repo_ids,
+              results_per_page: data.results_per_page,
+              sort: data.sort,
+            }
+          }
+        }
+      },
+    },
+    repository(name): {
+      local data = self,
+      allow_auto_merge:: null,
+      allow_merge_commit:: null,
+      allow_rebase_merge:: null,
+      allow_squash_merge:: null,
+      archived:: null,
+      default_branch:: null,
+      description:: null,
+      fork:: null,
+      full_name:: null,
+      git_clone_url:: null,
+      has_discussions:: null,
+      has_downloads:: null,
+      has_issues:: null,
+      has_projects:: null,
+      has_wiki:: null,
+      homepage_url:: null,
+      html_url:: null,
+      http_clone_url:: null,
+      id:: null,
+      is_template:: null,
+      merge_commit_message:: null,
+      merge_commit_title:: null,
+      name:: null,
+      node_id:: null,
+      pages:: null,
+      primary_language:: null,
+      private:: null,
+      repo_id:: null,
+      repository_license:: null,
+      squash_merge_commit_message:: null,
+      squash_merge_commit_title:: null,
+      ssh_clone_url:: null,
+      svn_url:: null,
+      template:: null,
+      topics:: null,
+      visibility:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_repository: {
+            [name]: {
+              allow_auto_merge: data.allow_auto_merge,
+              allow_merge_commit: data.allow_merge_commit,
+              allow_rebase_merge: data.allow_rebase_merge,
+              allow_squash_merge: data.allow_squash_merge,
+              archived: data.archived,
+              default_branch: data.default_branch,
+              description: data.description,
+              fork: data.fork,
+              full_name: data.full_name,
+              git_clone_url: data.git_clone_url,
+              has_discussions: data.has_discussions,
+              has_downloads: data.has_downloads,
+              has_issues: data.has_issues,
+              has_projects: data.has_projects,
+              has_wiki: data.has_wiki,
+              homepage_url: data.homepage_url,
+              html_url: data.html_url,
+              http_clone_url: data.http_clone_url,
+              id: data.id,
+              is_template: data.is_template,
+              merge_commit_message: data.merge_commit_message,
+              merge_commit_title: data.merge_commit_title,
+              name: data.name,
+              node_id: data.node_id,
+              pages: data.pages,
+              primary_language: data.primary_language,
+              private: data.private,
+              repo_id: data.repo_id,
+              repository_license: data.repository_license,
+              squash_merge_commit_message: data.squash_merge_commit_message,
+              squash_merge_commit_title: data.squash_merge_commit_title,
+              ssh_clone_url: data.ssh_clone_url,
+              svn_url: data.svn_url,
+              template: data.template,
+              topics: data.topics,
+              visibility: data.visibility,
+            }
+          }
+        }
+      },
+    },
+    repository_autolink_references(name): {
+      local data = self,
+      autolink_references:: null,
+      id:: null,
+      repository:: error 'repository is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_repository_autolink_references: {
+            [name]: {
+              autolink_references: data.autolink_references,
+              id: data.id,
+              repository: data.repository,
+            }
+          }
+        }
+      },
+    },
+    repository_branches(name): {
+      local data = self,
+      branches:: null,
+      id:: null,
+      only_non_protected_branches:: null,
+      only_protected_branches:: null,
+      repository:: error 'repository is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_repository_branches: {
+            [name]: {
+              branches: data.branches,
+              id: data.id,
+              only_non_protected_branches: data.only_non_protected_branches,
+              only_protected_branches: data.only_protected_branches,
+              repository: data.repository,
+            }
+          }
+        }
+      },
+    },
+    repository_deploy_keys(name): {
+      local data = self,
+      id:: null,
+      keys:: null,
+      repository:: error 'repository is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_repository_deploy_keys: {
+            [name]: {
+              id: data.id,
+              keys: data.keys,
+              repository: data.repository,
+            }
+          }
+        }
+      },
+    },
+    repository_deployment_branch_policies(name): {
+      local data = self,
+      deployment_branch_policies:: null,
+      environment_name:: error 'environment_name is required',
+      id:: null,
+      repository:: error 'repository is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_repository_deployment_branch_policies: {
+            [name]: {
+              deployment_branch_policies: data.deployment_branch_policies,
+              environment_name: data.environment_name,
+              id: data.id,
+              repository: data.repository,
+            }
+          }
+        }
+      },
+    },
+    repository_environments(name): {
+      local data = self,
+      environments:: null,
+      id:: null,
+      repository:: error 'repository is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_repository_environments: {
+            [name]: {
+              environments: data.environments,
+              id: data.id,
+              repository: data.repository,
+            }
+          }
+        }
+      },
+    },
+    repository_file(name): {
+      local data = self,
+      branch:: null,
+      commit_author:: null,
+      commit_email:: null,
+      commit_message:: null,
+      commit_sha:: null,
+      content:: null,
+      file:: error 'file is required',
+      id:: null,
+      ref:: null,
+      repository:: error 'repository is required',
+      sha:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_repository_file: {
+            [name]: {
+              branch: data.branch,
+              commit_author: data.commit_author,
+              commit_email: data.commit_email,
+              commit_message: data.commit_message,
+              commit_sha: data.commit_sha,
+              content: data.content,
+              file: data.file,
+              id: data.id,
+              ref: data.ref,
+              repository: data.repository,
+              sha: data.sha,
+            }
+          }
+        }
+      },
+    },
+    repository_milestone(name): {
+      local data = self,
+      description:: null,
+      due_date:: null,
+      id:: null,
+      number:: error 'number is required',
+      owner:: error 'owner is required',
+      repository:: error 'repository is required',
+      state:: null,
+      title:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_repository_milestone: {
+            [name]: {
+              description: data.description,
+              due_date: data.due_date,
+              id: data.id,
+              number: data.number,
+              owner: data.owner,
+              repository: data.repository,
+              state: data.state,
+              title: data.title,
+            }
+          }
+        }
+      },
+    },
+    repository_pull_request(name): {
+      local data = self,
+      base_ref:: null,
+      base_repository:: error 'base_repository is required',
+      base_sha:: null,
+      body:: null,
+      draft:: null,
+      head_owner:: null,
+      head_ref:: null,
+      head_repository:: null,
+      head_sha:: null,
+      id:: null,
+      labels:: null,
+      maintainer_can_modify:: null,
+      number:: error 'number is required',
+      opened_at:: null,
+      opened_by:: null,
+      owner:: null,
+      state:: null,
+      title:: null,
+      updated_at:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_repository_pull_request: {
+            [name]: {
+              base_ref: data.base_ref,
+              base_repository: data.base_repository,
+              base_sha: data.base_sha,
+              body: data.body,
+              draft: data.draft,
+              head_owner: data.head_owner,
+              head_ref: data.head_ref,
+              head_repository: data.head_repository,
+              head_sha: data.head_sha,
+              id: data.id,
+              labels: data.labels,
+              maintainer_can_modify: data.maintainer_can_modify,
+              number: data.number,
+              opened_at: data.opened_at,
+              opened_by: data.opened_by,
+              owner: data.owner,
+              state: data.state,
+              title: data.title,
+              updated_at: data.updated_at,
+            }
+          }
+        }
+      },
+    },
+    repository_pull_requests(name): {
+      local data = self,
+      base_ref:: null,
+      base_repository:: error 'base_repository is required',
+      head_ref:: null,
+      id:: null,
+      owner:: null,
+      results:: null,
+      sort_by:: null,
+      sort_direction:: null,
+      state:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_repository_pull_requests: {
+            [name]: {
+              base_ref: data.base_ref,
+              base_repository: data.base_repository,
+              head_ref: data.head_ref,
+              id: data.id,
+              owner: data.owner,
+              results: data.results,
+              sort_by: data.sort_by,
+              sort_direction: data.sort_direction,
+              state: data.state,
+            }
+          }
+        }
+      },
+    },
+    repository_teams(name): {
+      local data = self,
+      full_name:: null,
+      id:: null,
+      name:: null,
+      teams:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_repository_teams: {
+            [name]: {
+              full_name: data.full_name,
+              id: data.id,
+              name: data.name,
+              teams: data.teams,
+            }
+          }
+        }
+      },
+    },
+    repository_webhooks(name): {
+      local data = self,
+      id:: null,
+      repository:: error 'repository is required',
+      webhooks:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_repository_webhooks: {
+            [name]: {
+              id: data.id,
+              repository: data.repository,
+              webhooks: data.webhooks,
+            }
+          }
+        }
+      },
+    },
+    rest_api(name): {
+      local data = self,
+      body:: null,
+      code:: null,
+      endpoint:: error 'endpoint is required',
+      headers:: null,
+      id:: null,
+      status:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_rest_api: {
+            [name]: {
+              body: data.body,
+              code: data.code,
+              endpoint: data.endpoint,
+              headers: data.headers,
+              id: data.id,
+              status: data.status,
+            }
+          }
+        }
+      },
+    },
+    ssh_keys(name): {
+      local data = self,
+      id:: null,
+      keys:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_ssh_keys: {
+            [name]: {
+              id: data.id,
+              keys: data.keys,
+            }
+          }
+        }
+      },
+    },
+    team(name): {
+      local data = self,
+      description:: null,
+      id:: null,
+      members:: null,
+      membership_type:: null,
+      name:: null,
+      node_id:: null,
+      permission:: null,
+      privacy:: null,
+      repositories:: null,
+      repositories_detailed:: null,
+      results_per_page:: null,
+      slug:: error 'slug is required',
+      summary_only:: null,
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_team: {
+            [name]: {
+              description: data.description,
+              id: data.id,
+              members: data.members,
+              membership_type: data.membership_type,
+              name: data.name,
+              node_id: data.node_id,
+              permission: data.permission,
+              privacy: data.privacy,
+              repositories: data.repositories,
+              repositories_detailed: data.repositories_detailed,
+              results_per_page: data.results_per_page,
+              slug: data.slug,
+              summary_only: data.summary_only,
+            }
+          }
+        }
+      },
+    },
+    tree(name): {
+      local data = self,
+      entries:: null,
+      id:: null,
+      recursive:: null,
+      repository:: error 'repository is required',
+      tree_sha:: error 'tree_sha is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_tree: {
+            [name]: {
+              entries: data.entries,
+              id: data.id,
+              recursive: data.recursive,
+              repository: data.repository,
+              tree_sha: data.tree_sha,
+            }
+          }
+        }
+      },
+    },
+    user(name): {
+      local data = self,
+      avatar_url:: null,
+      bio:: null,
+      blog:: null,
+      company:: null,
+      created_at:: null,
+      email:: null,
+      followers:: null,
+      following:: null,
+      gpg_keys:: null,
+      gravatar_id:: null,
+      id:: null,
+      location:: null,
+      login:: null,
+      name:: null,
+      node_id:: null,
+      public_gists:: null,
+      public_repos:: null,
+      site_admin:: null,
+      ssh_keys:: null,
+      suspended_at:: null,
+      updated_at:: null,
+      username:: error 'username is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_user: {
+            [name]: {
+              avatar_url: data.avatar_url,
+              bio: data.bio,
+              blog: data.blog,
+              company: data.company,
+              created_at: data.created_at,
+              email: data.email,
+              followers: data.followers,
+              following: data.following,
+              gpg_keys: data.gpg_keys,
+              gravatar_id: data.gravatar_id,
+              id: data.id,
+              location: data.location,
+              login: data.login,
+              name: data.name,
+              node_id: data.node_id,
+              public_gists: data.public_gists,
+              public_repos: data.public_repos,
+              site_admin: data.site_admin,
+              ssh_keys: data.ssh_keys,
+              suspended_at: data.suspended_at,
+              updated_at: data.updated_at,
+              username: data.username,
+            }
+          }
+        }
+      },
+    },
+    user_external_identity(name): {
+      local data = self,
+      id:: null,
+      login:: null,
+      saml_identity:: null,
+      scim_identity:: null,
+      username:: error 'username is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_user_external_identity: {
+            [name]: {
+              id: data.id,
+              login: data.login,
+              saml_identity: data.saml_identity,
+              scim_identity: data.scim_identity,
+              username: data.username,
+            }
+          }
+        }
+      },
+    },
+    users(name): {
+      local data = self,
+      emails:: null,
+      id:: null,
+      logins:: null,
+      node_ids:: null,
+      unknown_logins:: null,
+      usernames:: error 'usernames is required',
+      __required_provider__: {
+        'github': {
+          source: "integrations/github"
+        }
+      },
+      __block__: {
+        data: {
+          github_users: {
+            [name]: {
+              emails: data.emails,
+              id: data.id,
+              logins: data.logins,
+              node_ids: data.node_ids,
+              unknown_logins: data.unknown_logins,
+              usernames: data.usernames,
+            }
+          }
+        }
+      },
+    },
+  },
 }
