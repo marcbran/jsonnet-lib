@@ -1,4 +1,3 @@
-
 {
   resource: {
     actions_environment_secret(name): {
@@ -12,9 +11,9 @@
       secret_name:: error 'secret_name is required',
       updated_at:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -28,9 +27,9 @@
               repository: resource.repository,
               secret_name: resource.secret_name,
               updated_at: resource.updated_at,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_environment_variable(name): {
@@ -43,9 +42,9 @@
       value:: error 'value is required',
       variable_name:: error 'variable_name is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -58,9 +57,9 @@
               updated_at: resource.updated_at,
               value: resource.value,
               variable_name: resource.variable_name,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_organization_oidc_subject_claim_customization_template(name): {
@@ -68,9 +67,9 @@
       id:: null,
       include_claim_keys:: error 'include_claim_keys is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -78,9 +77,9 @@
             [name]: {
               id: resource.id,
               include_claim_keys: resource.include_claim_keys,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_organization_permissions(name): {
@@ -89,9 +88,9 @@
       enabled_repositories:: error 'enabled_repositories is required',
       id:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -100,9 +99,9 @@
               allowed_actions: resource.allowed_actions,
               enabled_repositories: resource.enabled_repositories,
               id: resource.id,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_organization_secret(name): {
@@ -116,9 +115,9 @@
       updated_at:: null,
       visibility:: error 'visibility is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -132,9 +131,9 @@
               selected_repository_ids: resource.selected_repository_ids,
               updated_at: resource.updated_at,
               visibility: resource.visibility,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_organization_secret_repositories(name): {
@@ -143,9 +142,9 @@
       secret_name:: error 'secret_name is required',
       selected_repository_ids:: error 'selected_repository_ids is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -154,9 +153,9 @@
               id: resource.id,
               secret_name: resource.secret_name,
               selected_repository_ids: resource.selected_repository_ids,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_organization_variable(name): {
@@ -169,9 +168,9 @@
       variable_name:: error 'variable_name is required',
       visibility:: error 'visibility is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -184,9 +183,9 @@
               value: resource.value,
               variable_name: resource.variable_name,
               visibility: resource.visibility,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_repository_access_level(name): {
@@ -195,9 +194,9 @@
       id:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -206,9 +205,9 @@
               access_level: resource.access_level,
               id: resource.id,
               repository: resource.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_repository_oidc_subject_claim_customization_template(name): {
@@ -218,9 +217,9 @@
       repository:: error 'repository is required',
       use_default:: error 'use_default is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -230,9 +229,9 @@
               include_claim_keys: resource.include_claim_keys,
               repository: resource.repository,
               use_default: resource.use_default,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_repository_permissions(name): {
@@ -242,9 +241,9 @@
       id:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -254,9 +253,9 @@
               enabled: resource.enabled,
               id: resource.id,
               repository: resource.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_runner_group(name): {
@@ -274,9 +273,9 @@
       selected_workflows:: null,
       visibility:: error 'visibility is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -294,9 +293,9 @@
               selected_repository_ids: resource.selected_repository_ids,
               selected_workflows: resource.selected_workflows,
               visibility: resource.visibility,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_secret(name): {
@@ -309,9 +308,9 @@
       secret_name:: error 'secret_name is required',
       updated_at:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -324,9 +323,9 @@
               repository: resource.repository,
               secret_name: resource.secret_name,
               updated_at: resource.updated_at,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_variable(name): {
@@ -338,9 +337,9 @@
       value:: error 'value is required',
       variable_name:: error 'variable_name is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -352,9 +351,9 @@
               updated_at: resource.updated_at,
               value: resource.value,
               variable_name: resource.variable_name,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     app_installation_repositories(name): {
@@ -363,9 +362,9 @@
       installation_id:: error 'installation_id is required',
       selected_repositories:: error 'selected_repositories is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -374,9 +373,9 @@
               id: resource.id,
               installation_id: resource.installation_id,
               selected_repositories: resource.selected_repositories,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     app_installation_repository(name): {
@@ -386,9 +385,9 @@
       repo_id:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -398,9 +397,9 @@
               installation_id: resource.installation_id,
               repo_id: resource.repo_id,
               repository: resource.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     branch(name): {
@@ -414,9 +413,9 @@
       source_branch:: null,
       source_sha:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -430,9 +429,9 @@
               sha: resource.sha,
               source_branch: resource.source_branch,
               source_sha: resource.source_sha,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     branch_default(name): {
@@ -443,9 +442,9 @@
       rename:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -456,9 +455,9 @@
               id: resource.id,
               rename: resource.rename,
               repository: resource.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     branch_protection(name): {
@@ -475,9 +474,9 @@
       require_signed_commits:: null,
       required_linear_history:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -494,9 +493,9 @@
               require_conversation_resolution: resource.require_conversation_resolution,
               require_signed_commits: resource.require_signed_commits,
               required_linear_history: resource.required_linear_history,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     branch_protection_v3(name): {
@@ -509,9 +508,9 @@
       require_conversation_resolution:: null,
       require_signed_commits:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -524,9 +523,9 @@
               repository: resource.repository,
               require_conversation_resolution: resource.require_conversation_resolution,
               require_signed_commits: resource.require_signed_commits,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     codespaces_organization_secret(name): {
@@ -540,9 +539,9 @@
       updated_at:: null,
       visibility:: error 'visibility is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -556,9 +555,9 @@
               selected_repository_ids: resource.selected_repository_ids,
               updated_at: resource.updated_at,
               visibility: resource.visibility,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     codespaces_organization_secret_repositories(name): {
@@ -567,9 +566,9 @@
       secret_name:: error 'secret_name is required',
       selected_repository_ids:: error 'selected_repository_ids is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -578,9 +577,9 @@
               id: resource.id,
               secret_name: resource.secret_name,
               selected_repository_ids: resource.selected_repository_ids,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     codespaces_secret(name): {
@@ -593,9 +592,9 @@
       secret_name:: error 'secret_name is required',
       updated_at:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -608,9 +607,9 @@
               repository: resource.repository,
               secret_name: resource.secret_name,
               updated_at: resource.updated_at,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     codespaces_user_secret(name): {
@@ -623,9 +622,9 @@
       selected_repository_ids:: null,
       updated_at:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -638,9 +637,9 @@
               secret_name: resource.secret_name,
               selected_repository_ids: resource.selected_repository_ids,
               updated_at: resource.updated_at,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     dependabot_organization_secret(name): {
@@ -654,9 +653,9 @@
       updated_at:: null,
       visibility:: error 'visibility is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -670,9 +669,9 @@
               selected_repository_ids: resource.selected_repository_ids,
               updated_at: resource.updated_at,
               visibility: resource.visibility,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     dependabot_organization_secret_repositories(name): {
@@ -681,9 +680,9 @@
       secret_name:: error 'secret_name is required',
       selected_repository_ids:: error 'selected_repository_ids is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -692,9 +691,9 @@
               id: resource.id,
               secret_name: resource.secret_name,
               selected_repository_ids: resource.selected_repository_ids,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     dependabot_secret(name): {
@@ -707,9 +706,9 @@
       secret_name:: error 'secret_name is required',
       updated_at:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -722,9 +721,9 @@
               repository: resource.repository,
               secret_name: resource.secret_name,
               updated_at: resource.updated_at,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     emu_group_mapping(name): {
@@ -734,9 +733,9 @@
       id:: null,
       team_slug:: error 'team_slug is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -746,9 +745,9 @@
               group_id: resource.group_id,
               id: resource.id,
               team_slug: resource.team_slug,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     enterprise_actions_permissions(name): {
@@ -758,9 +757,9 @@
       enterprise_slug:: error 'enterprise_slug is required',
       id:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -770,9 +769,9 @@
               enabled_organizations: resource.enabled_organizations,
               enterprise_slug: resource.enterprise_slug,
               id: resource.id,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     enterprise_actions_runner_group(name): {
@@ -790,9 +789,9 @@
       selected_workflows:: null,
       visibility:: error 'visibility is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -810,9 +809,9 @@
               selected_organizations_url: resource.selected_organizations_url,
               selected_workflows: resource.selected_workflows,
               visibility: resource.visibility,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     enterprise_organization(name): {
@@ -826,9 +825,9 @@
       id:: null,
       name:: error 'name is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -842,9 +841,9 @@
               enterprise_id: resource.enterprise_id,
               id: resource.id,
               name: resource.name,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     issue(name): {
@@ -860,9 +859,9 @@
       repository:: error 'repository is required',
       title:: error 'title is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -878,9 +877,9 @@
               number: resource.number,
               repository: resource.repository,
               title: resource.title,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     issue_label(name): {
@@ -893,9 +892,9 @@
       repository:: error 'repository is required',
       url:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -908,9 +907,9 @@
               name: resource.name,
               repository: resource.repository,
               url: resource.url,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     issue_labels(name): {
@@ -918,9 +917,9 @@
       id:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -928,9 +927,9 @@
             [name]: {
               id: resource.id,
               repository: resource.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     membership(name): {
@@ -941,9 +940,9 @@
       role:: null,
       username:: error 'username is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -954,9 +953,9 @@
               id: resource.id,
               role: resource.role,
               username: resource.username,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     organization_block(name): {
@@ -965,9 +964,9 @@
       id:: null,
       username:: error 'username is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -976,9 +975,9 @@
               etag: resource.etag,
               id: resource.id,
               username: resource.username,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     organization_custom_role(name): {
@@ -989,9 +988,9 @@
       name:: error 'name is required',
       permissions:: error 'permissions is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1002,9 +1001,9 @@
               id: resource.id,
               name: resource.name,
               permissions: resource.permissions,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     organization_project(name): {
@@ -1015,9 +1014,9 @@
       name:: error 'name is required',
       url:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1028,9 +1027,9 @@
               id: resource.id,
               name: resource.name,
               url: resource.url,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     organization_ruleset(name): {
@@ -1043,9 +1042,9 @@
       ruleset_id:: null,
       target:: error 'target is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1058,9 +1057,9 @@
               node_id: resource.node_id,
               ruleset_id: resource.ruleset_id,
               target: resource.target,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     organization_security_manager(name): {
@@ -1068,9 +1067,9 @@
       id:: null,
       team_slug:: error 'team_slug is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1078,9 +1077,9 @@
             [name]: {
               id: resource.id,
               team_slug: resource.team_slug,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     organization_settings(name): {
@@ -1113,9 +1112,9 @@
       twitter_username:: null,
       web_commit_signoff_required:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1148,9 +1147,9 @@
               secret_scanning_push_protection_enabled_for_new_repositories: resource.secret_scanning_push_protection_enabled_for_new_repositories,
               twitter_username: resource.twitter_username,
               web_commit_signoff_required: resource.web_commit_signoff_required,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     organization_webhook(name): {
@@ -1161,9 +1160,9 @@
       id:: null,
       url:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1174,9 +1173,9 @@
               events: resource.events,
               id: resource.id,
               url: resource.url,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     project_card(name): {
@@ -1189,9 +1188,9 @@
       id:: null,
       note:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1204,9 +1203,9 @@
               etag: resource.etag,
               id: resource.id,
               note: resource.note,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     project_column(name): {
@@ -1217,9 +1216,9 @@
       name:: error 'name is required',
       project_id:: error 'project_id is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1230,9 +1229,9 @@
               id: resource.id,
               name: resource.name,
               project_id: resource.project_id,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     release(name): {
@@ -1259,9 +1258,9 @@
       url:: null,
       zipball_url:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1288,9 +1287,9 @@
               upload_url: resource.upload_url,
               url: resource.url,
               zipball_url: resource.zipball_url,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository(name): {
@@ -1338,9 +1337,9 @@
       vulnerability_alerts:: null,
       web_commit_signoff_required:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1388,9 +1387,9 @@
               visibility: resource.visibility,
               vulnerability_alerts: resource.vulnerability_alerts,
               web_commit_signoff_required: resource.web_commit_signoff_required,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_autolink_reference(name): {
@@ -1402,9 +1401,9 @@
       repository:: error 'repository is required',
       target_url_template:: error 'target_url_template is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1416,9 +1415,9 @@
               key_prefix: resource.key_prefix,
               repository: resource.repository,
               target_url_template: resource.target_url_template,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_collaborator(name): {
@@ -1430,9 +1429,9 @@
       repository:: error 'repository is required',
       username:: error 'username is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1444,9 +1443,9 @@
               permission_diff_suppression: resource.permission_diff_suppression,
               repository: resource.repository,
               username: resource.username,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_collaborators(name): {
@@ -1455,9 +1454,9 @@
       invitation_ids:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1466,9 +1465,9 @@
               id: resource.id,
               invitation_ids: resource.invitation_ids,
               repository: resource.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_dependabot_security_updates(name): {
@@ -1477,9 +1476,9 @@
       id:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1488,9 +1487,9 @@
               enabled: resource.enabled,
               id: resource.id,
               repository: resource.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_deploy_key(name): {
@@ -1502,9 +1501,9 @@
       repository:: error 'repository is required',
       title:: error 'title is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1516,9 +1515,9 @@
               read_only: resource.read_only,
               repository: resource.repository,
               title: resource.title,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_deployment_branch_policy(name): {
@@ -1529,9 +1528,9 @@
       name:: error 'name is required',
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1542,9 +1541,9 @@
               id: resource.id,
               name: resource.name,
               repository: resource.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_environment(name): {
@@ -1556,9 +1555,9 @@
       repository:: error 'repository is required',
       wait_timer:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1570,9 +1569,9 @@
               prevent_self_review: resource.prevent_self_review,
               repository: resource.repository,
               wait_timer: resource.wait_timer,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_environment_deployment_policy(name): {
@@ -1582,9 +1581,9 @@
       id:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1594,9 +1593,9 @@
               environment: resource.environment,
               id: resource.id,
               repository: resource.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_file(name): {
@@ -1614,9 +1613,9 @@
       repository:: error 'repository is required',
       sha:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1634,9 +1633,9 @@
               ref: resource.ref,
               repository: resource.repository,
               sha: resource.sha,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_milestone(name): {
@@ -1650,9 +1649,9 @@
       state:: null,
       title:: error 'title is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1666,9 +1665,9 @@
               repository: resource.repository,
               state: resource.state,
               title: resource.title,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_project(name): {
@@ -1680,9 +1679,9 @@
       repository:: error 'repository is required',
       url:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1694,9 +1693,9 @@
               name: resource.name,
               repository: resource.repository,
               url: resource.url,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_pull_request(name): {
@@ -1719,9 +1718,9 @@
       title:: error 'title is required',
       updated_at:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1744,9 +1743,9 @@
               state: resource.state,
               title: resource.title,
               updated_at: resource.updated_at,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_ruleset(name): {
@@ -1760,9 +1759,9 @@
       ruleset_id:: null,
       target:: error 'target is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1776,9 +1775,9 @@
               repository: resource.repository,
               ruleset_id: resource.ruleset_id,
               target: resource.target,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_tag_protection(name): {
@@ -1788,9 +1787,9 @@
       repository:: error 'repository is required',
       tag_protection_id:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1800,9 +1799,9 @@
               pattern: resource.pattern,
               repository: resource.repository,
               tag_protection_id: resource.tag_protection_id,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_topics(name): {
@@ -1811,9 +1810,9 @@
       repository:: error 'repository is required',
       topics:: error 'topics is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1822,9 +1821,9 @@
               id: resource.id,
               repository: resource.repository,
               topics: resource.topics,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_webhook(name): {
@@ -1836,9 +1835,9 @@
       repository:: error 'repository is required',
       url:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1850,9 +1849,9 @@
               id: resource.id,
               repository: resource.repository,
               url: resource.url,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     team(name): {
@@ -1871,9 +1870,9 @@
       privacy:: null,
       slug:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1892,9 +1891,9 @@
               parent_team_read_slug: resource.parent_team_read_slug,
               privacy: resource.privacy,
               slug: resource.slug,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     team_members(name): {
@@ -1902,9 +1901,9 @@
       id:: null,
       team_id:: error 'team_id is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1912,9 +1911,9 @@
             [name]: {
               id: resource.id,
               team_id: resource.team_id,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     team_membership(name): {
@@ -1925,9 +1924,9 @@
       team_id:: error 'team_id is required',
       username:: error 'username is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1938,9 +1937,9 @@
               role: resource.role,
               team_id: resource.team_id,
               username: resource.username,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     team_repository(name): {
@@ -1951,9 +1950,9 @@
       repository:: error 'repository is required',
       team_id:: error 'team_id is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1964,9 +1963,9 @@
               permission: resource.permission,
               repository: resource.repository,
               team_id: resource.team_id,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     team_settings(name): {
@@ -1976,9 +1975,9 @@
       team_slug:: null,
       team_uid:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -1988,9 +1987,9 @@
               team_id: resource.team_id,
               team_slug: resource.team_slug,
               team_uid: resource.team_uid,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     team_sync_group_mapping(name): {
@@ -1999,9 +1998,9 @@
       id:: null,
       team_slug:: error 'team_slug is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -2010,9 +2009,9 @@
               etag: resource.etag,
               id: resource.id,
               team_slug: resource.team_slug,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     user_gpg_key(name): {
@@ -2022,9 +2021,9 @@
       id:: null,
       key_id:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -2034,9 +2033,9 @@
               etag: resource.etag,
               id: resource.id,
               key_id: resource.key_id,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     user_invitation_accepter(name): {
@@ -2045,9 +2044,9 @@
       id:: null,
       invitation_id:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -2056,9 +2055,9 @@
               allow_empty_id: resource.allow_empty_id,
               id: resource.id,
               invitation_id: resource.invitation_id,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     user_ssh_key(name): {
@@ -2069,9 +2068,9 @@
       title:: error 'title is required',
       url:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         resource: {
@@ -2082,9 +2081,9 @@
               key: resource.key,
               title: resource.title,
               url: resource.url,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
   },
@@ -2097,9 +2096,9 @@
       name:: null,
       secrets:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2110,9 +2109,9 @@
               id: data.id,
               name: data.name,
               secrets: data.secrets,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_environment_variables(name): {
@@ -2123,9 +2122,9 @@
       name:: null,
       variables:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2136,9 +2135,9 @@
               id: data.id,
               name: data.name,
               variables: data.variables,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_organization_oidc_subject_claim_customization_template(name): {
@@ -2146,9 +2145,9 @@
       id:: null,
       include_claim_keys:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2156,9 +2155,9 @@
             [name]: {
               id: data.id,
               include_claim_keys: data.include_claim_keys,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_organization_public_key(name): {
@@ -2167,9 +2166,9 @@
       key:: null,
       key_id:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2178,9 +2177,9 @@
               id: data.id,
               key: data.key,
               key_id: data.key_id,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_organization_registration_token(name): {
@@ -2189,9 +2188,9 @@
       id:: null,
       token:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2200,9 +2199,9 @@
               expires_at: data.expires_at,
               id: data.id,
               token: data.token,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_organization_secrets(name): {
@@ -2210,9 +2209,9 @@
       id:: null,
       secrets:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2220,9 +2219,9 @@
             [name]: {
               id: data.id,
               secrets: data.secrets,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_organization_variables(name): {
@@ -2230,9 +2229,9 @@
       id:: null,
       variables:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2240,9 +2239,9 @@
             [name]: {
               id: data.id,
               variables: data.variables,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_public_key(name): {
@@ -2252,9 +2251,9 @@
       key_id:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2264,9 +2263,9 @@
               key: data.key,
               key_id: data.key_id,
               repository: data.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_registration_token(name): {
@@ -2276,9 +2275,9 @@
       repository:: error 'repository is required',
       token:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2288,9 +2287,9 @@
               id: data.id,
               repository: data.repository,
               token: data.token,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_repository_oidc_subject_claim_customization_template(name): {
@@ -2300,9 +2299,9 @@
       name:: error 'name is required',
       use_default:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2312,9 +2311,9 @@
               include_claim_keys: data.include_claim_keys,
               name: data.name,
               use_default: data.use_default,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_secrets(name): {
@@ -2324,9 +2323,9 @@
       name:: null,
       secrets:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2336,9 +2335,9 @@
               id: data.id,
               name: data.name,
               secrets: data.secrets,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     actions_variables(name): {
@@ -2348,9 +2347,9 @@
       name:: null,
       variables:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2360,9 +2359,9 @@
               id: data.id,
               name: data.name,
               variables: data.variables,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     app(name): {
@@ -2373,9 +2372,9 @@
       node_id:: null,
       slug:: error 'slug is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2386,9 +2385,9 @@
               name: data.name,
               node_id: data.node_id,
               slug: data.slug,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     app_token(name): {
@@ -2399,9 +2398,9 @@
       pem_file:: error 'pem_file is required',
       token:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2412,9 +2411,9 @@
               installation_id: data.installation_id,
               pem_file: data.pem_file,
               token: data.token,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     branch(name): {
@@ -2426,9 +2425,9 @@
       repository:: error 'repository is required',
       sha:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2440,9 +2439,9 @@
               ref: data.ref,
               repository: data.repository,
               sha: data.sha,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     branch_protection_rules(name): {
@@ -2451,9 +2450,9 @@
       repository:: error 'repository is required',
       rules:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2462,9 +2461,9 @@
               id: data.id,
               repository: data.repository,
               rules: data.rules,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     codespaces_organization_public_key(name): {
@@ -2473,9 +2472,9 @@
       key:: null,
       key_id:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2484,9 +2483,9 @@
               id: data.id,
               key: data.key,
               key_id: data.key_id,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     codespaces_organization_secrets(name): {
@@ -2494,9 +2493,9 @@
       id:: null,
       secrets:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2504,9 +2503,9 @@
             [name]: {
               id: data.id,
               secrets: data.secrets,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     codespaces_public_key(name): {
@@ -2516,9 +2515,9 @@
       key_id:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2528,9 +2527,9 @@
               key: data.key,
               key_id: data.key_id,
               repository: data.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     codespaces_secrets(name): {
@@ -2540,9 +2539,9 @@
       name:: null,
       secrets:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2552,9 +2551,9 @@
               id: data.id,
               name: data.name,
               secrets: data.secrets,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     codespaces_user_public_key(name): {
@@ -2563,9 +2562,9 @@
       key:: null,
       key_id:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2574,9 +2573,9 @@
               id: data.id,
               key: data.key,
               key_id: data.key_id,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     codespaces_user_secrets(name): {
@@ -2584,9 +2583,9 @@
       id:: null,
       secrets:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2594,9 +2593,9 @@
             [name]: {
               id: data.id,
               secrets: data.secrets,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     collaborators(name): {
@@ -2607,9 +2606,9 @@
       owner:: error 'owner is required',
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2620,9 +2619,9 @@
               id: data.id,
               owner: data.owner,
               repository: data.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     dependabot_organization_public_key(name): {
@@ -2631,9 +2630,9 @@
       key:: null,
       key_id:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2642,9 +2641,9 @@
               id: data.id,
               key: data.key,
               key_id: data.key_id,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     dependabot_organization_secrets(name): {
@@ -2652,9 +2651,9 @@
       id:: null,
       secrets:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2662,9 +2661,9 @@
             [name]: {
               id: data.id,
               secrets: data.secrets,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     dependabot_public_key(name): {
@@ -2674,9 +2673,9 @@
       key_id:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2686,9 +2685,9 @@
               key: data.key,
               key_id: data.key_id,
               repository: data.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     dependabot_secrets(name): {
@@ -2698,9 +2697,9 @@
       name:: null,
       secrets:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2710,9 +2709,9 @@
               id: data.id,
               name: data.name,
               secrets: data.secrets,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     enterprise(name): {
@@ -2725,9 +2724,9 @@
       slug:: error 'slug is required',
       url:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2740,9 +2739,9 @@
               name: data.name,
               slug: data.slug,
               url: data.url,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     external_groups(name): {
@@ -2750,9 +2749,9 @@
       external_groups:: null,
       id:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2760,9 +2759,9 @@
             [name]: {
               external_groups: data.external_groups,
               id: data.id,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     ip_ranges(name): {
@@ -2796,9 +2795,9 @@
       web_ipv4:: null,
       web_ipv6:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2832,9 +2831,9 @@
               web: data.web,
               web_ipv4: data.web_ipv4,
               web_ipv6: data.web_ipv6,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     issue_labels(name): {
@@ -2843,9 +2842,9 @@
       labels:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2854,9 +2853,9 @@
               id: data.id,
               labels: data.labels,
               repository: data.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     membership(name): {
@@ -2868,9 +2867,9 @@
       state:: null,
       username:: error 'username is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2882,9 +2881,9 @@
               role: data.role,
               state: data.state,
               username: data.username,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     organization(name): {
@@ -2919,9 +2918,9 @@
       users:: null,
       web_commit_signoff_required:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2956,9 +2955,9 @@
               two_factor_requirement_enabled: data.two_factor_requirement_enabled,
               users: data.users,
               web_commit_signoff_required: data.web_commit_signoff_required,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     organization_custom_role(name): {
@@ -2969,9 +2968,9 @@
       name:: error 'name is required',
       permissions:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -2982,9 +2981,9 @@
               id: data.id,
               name: data.name,
               permissions: data.permissions,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     organization_external_identities(name): {
@@ -2992,9 +2991,9 @@
       id:: null,
       identities:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3002,9 +3001,9 @@
             [name]: {
               id: data.id,
               identities: data.identities,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     organization_ip_allow_list(name): {
@@ -3012,9 +3011,9 @@
       id:: null,
       ip_allow_list:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3022,9 +3021,9 @@
             [name]: {
               id: data.id,
               ip_allow_list: data.ip_allow_list,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     organization_team_sync_groups(name): {
@@ -3032,9 +3031,9 @@
       groups:: null,
       id:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3042,9 +3041,9 @@
             [name]: {
               groups: data.groups,
               id: data.id,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     organization_teams(name): {
@@ -3055,9 +3054,9 @@
       summary_only:: null,
       teams:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3068,9 +3067,9 @@
               root_teams_only: data.root_teams_only,
               summary_only: data.summary_only,
               teams: data.teams,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     organization_webhooks(name): {
@@ -3078,9 +3077,9 @@
       id:: null,
       webhooks:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3088,9 +3087,9 @@
             [name]: {
               id: data.id,
               webhooks: data.webhooks,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     ref(name): {
@@ -3102,9 +3101,9 @@
       repository:: error 'repository is required',
       sha:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3116,9 +3115,9 @@
               ref: data.ref,
               repository: data.repository,
               sha: data.sha,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     release(name): {
@@ -3145,9 +3144,9 @@
       url:: null,
       zipball_url:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3174,9 +3173,9 @@
               upload_url: data.upload_url,
               url: data.url,
               zipball_url: data.zipball_url,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repositories(name): {
@@ -3190,9 +3189,9 @@
       results_per_page:: null,
       sort:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3206,9 +3205,9 @@
               repo_ids: data.repo_ids,
               results_per_page: data.results_per_page,
               sort: data.sort,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository(name): {
@@ -3250,9 +3249,9 @@
       topics:: null,
       visibility:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3294,9 +3293,9 @@
               template: data.template,
               topics: data.topics,
               visibility: data.visibility,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_autolink_references(name): {
@@ -3305,9 +3304,9 @@
       id:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3316,9 +3315,9 @@
               autolink_references: data.autolink_references,
               id: data.id,
               repository: data.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_branches(name): {
@@ -3329,9 +3328,9 @@
       only_protected_branches:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3342,9 +3341,9 @@
               only_non_protected_branches: data.only_non_protected_branches,
               only_protected_branches: data.only_protected_branches,
               repository: data.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_deploy_keys(name): {
@@ -3353,9 +3352,9 @@
       keys:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3364,9 +3363,9 @@
               id: data.id,
               keys: data.keys,
               repository: data.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_deployment_branch_policies(name): {
@@ -3376,9 +3375,9 @@
       id:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3388,9 +3387,9 @@
               environment_name: data.environment_name,
               id: data.id,
               repository: data.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_environments(name): {
@@ -3399,9 +3398,9 @@
       id:: null,
       repository:: error 'repository is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3410,9 +3409,9 @@
               environments: data.environments,
               id: data.id,
               repository: data.repository,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_file(name): {
@@ -3429,9 +3428,9 @@
       repository:: error 'repository is required',
       sha:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3448,9 +3447,9 @@
               ref: data.ref,
               repository: data.repository,
               sha: data.sha,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_milestone(name): {
@@ -3464,9 +3463,9 @@
       state:: null,
       title:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3480,9 +3479,9 @@
               repository: data.repository,
               state: data.state,
               title: data.title,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_pull_request(name): {
@@ -3507,9 +3506,9 @@
       title:: null,
       updated_at:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3534,9 +3533,9 @@
               state: data.state,
               title: data.title,
               updated_at: data.updated_at,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_pull_requests(name): {
@@ -3551,9 +3550,9 @@
       sort_direction:: null,
       state:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3568,9 +3567,9 @@
               sort_by: data.sort_by,
               sort_direction: data.sort_direction,
               state: data.state,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_teams(name): {
@@ -3580,9 +3579,9 @@
       name:: null,
       teams:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3592,9 +3591,9 @@
               id: data.id,
               name: data.name,
               teams: data.teams,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     repository_webhooks(name): {
@@ -3603,9 +3602,9 @@
       repository:: error 'repository is required',
       webhooks:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3614,9 +3613,9 @@
               id: data.id,
               repository: data.repository,
               webhooks: data.webhooks,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     rest_api(name): {
@@ -3628,9 +3627,9 @@
       id:: null,
       status:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3642,9 +3641,9 @@
               headers: data.headers,
               id: data.id,
               status: data.status,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     ssh_keys(name): {
@@ -3652,9 +3651,9 @@
       id:: null,
       keys:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3662,9 +3661,9 @@
             [name]: {
               id: data.id,
               keys: data.keys,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     team(name): {
@@ -3683,9 +3682,9 @@
       slug:: error 'slug is required',
       summary_only:: null,
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3704,9 +3703,9 @@
               results_per_page: data.results_per_page,
               slug: data.slug,
               summary_only: data.summary_only,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     tree(name): {
@@ -3717,9 +3716,9 @@
       repository:: error 'repository is required',
       tree_sha:: error 'tree_sha is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3730,9 +3729,9 @@
               recursive: data.recursive,
               repository: data.repository,
               tree_sha: data.tree_sha,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     user(name): {
@@ -3760,9 +3759,9 @@
       updated_at:: null,
       username:: error 'username is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3790,9 +3789,9 @@
               suspended_at: data.suspended_at,
               updated_at: data.updated_at,
               username: data.username,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     user_external_identity(name): {
@@ -3803,9 +3802,9 @@
       scim_identity:: null,
       username:: error 'username is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3816,9 +3815,9 @@
               saml_identity: data.saml_identity,
               scim_identity: data.scim_identity,
               username: data.username,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     users(name): {
@@ -3830,9 +3829,9 @@
       unknown_logins:: null,
       usernames:: error 'usernames is required',
       __required_provider__: {
-        'github': {
-          source: "integrations/github"
-        }
+        github: {
+          source: 'integrations/github',
+        },
       },
       __block__: {
         data: {
@@ -3844,9 +3843,9 @@
               node_ids: data.node_ids,
               unknown_logins: data.unknown_logins,
               usernames: data.usernames,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
   },

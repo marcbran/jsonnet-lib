@@ -1,4 +1,3 @@
-
 {
   resource: {
     repository(name): {
@@ -7,9 +6,9 @@
       name:: error 'name is required',
       path:: error 'path is required',
       __required_provider__: {
-        'dolt': {
-          source: "marcbran/dolt"
-        }
+        dolt: {
+          source: 'marcbran/dolt',
+        },
       },
       __block__: {
         resource: {
@@ -18,9 +17,9 @@
               email: resource.email,
               name: resource.name,
               path: resource.path,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     rowset(name): {
@@ -33,9 +32,9 @@
       unique_column:: error 'unique_column is required',
       values:: error 'values is required',
       __required_provider__: {
-        'dolt': {
-          source: "marcbran/dolt"
-        }
+        dolt: {
+          source: 'marcbran/dolt',
+        },
       },
       __block__: {
         resource: {
@@ -48,9 +47,9 @@
               table_name: resource.table_name,
               unique_column: resource.unique_column,
               values: resource.values,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
     table(name): {
@@ -61,9 +60,9 @@
       query:: error 'query is required',
       repository_path:: error 'repository_path is required',
       __required_provider__: {
-        'dolt': {
-          source: "marcbran/dolt"
-        }
+        dolt: {
+          source: 'marcbran/dolt',
+        },
       },
       __block__: {
         resource: {
@@ -74,10 +73,12 @@
               name: resource.name,
               query: resource.query,
               repository_path: resource.repository_path,
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
+  },
+  data: {
   },
 }
